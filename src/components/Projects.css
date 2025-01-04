@@ -1,0 +1,79 @@
+.container {
+  display:flexbox;
+  flex-direction: column;
+  width: 90%; /* Use the full screen width */
+  /* max-width: 1200px; Limit the overall content width */
+  margin: 0 auto;
+  border-left: 30px;
+  padding: 20px;
+}
+
+.header-content {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: stretch; /* Stretch both sides (image grid and text) to the same height */
+}
+
+.image-grid {
+  display: grid;
+  flex: 1 1; /* Allow it to share space proportionally */
+  max-width: 40%; /* Prevent it from exceeding a set width */
+  max-height: 100%;
+  gap: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: flex-end;
+  align-items: start;
+  align-content:first baseline;
+  margin-top: 10px;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack image and caption vertically */
+  align-items: start; /* Center-align both image and caption */
+}
+
+.title-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%; /* Ensure image takes the full width of its container */
+  max-width: 400px; /* Limit max width of image */
+  height: auto;
+  border-radius: 8px;
+  object-fit: fill;
+}
+
+.text-container {
+  flex: 1; /* Share space proportionally */
+  max-width: 100%; /* Constrain its size */
+  padding: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  z-index: 1; /* Ensure it appears above the image grid */
+}
+
+ul {
+  margin-left: 18px;
+}
+
+.caption {
+  font-size: 9pt;
+  line-height: 15px;
+  margin-top: 5px;
+  max-width: 100%;
+}
