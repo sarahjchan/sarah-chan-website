@@ -5,16 +5,14 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
-      <section id="contact-me"></section>
-      <h1 className="header">CONTACT ME</h1>
-
-
       <section class='social-media'>
         <div class='social-media-wrap'>
           <small class='website-rights'>
-            {/* <p>Thanks for visiting!</p>
-            Sarah Chan © 2024 */}
-            Made with React.js. View the source code here.
+            <p>Thanks for visiting!</p>
+            {/* Sarah Chan © 2024 */}
+            Made with React.js. View the source code {" "}
+            <a href="https://github.com/sarahjchan/sarah-chan-website" target="_blank" rel="noopener noreferrer"><small>here</small></a> 
+            .
           </small>
           <div class='social-icons'>
             <Link

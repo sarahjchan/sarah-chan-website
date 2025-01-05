@@ -6,12 +6,13 @@
 
 /* Fullscreen Title Section */
 .fullscreen-title {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center; /* Centers text vertically */
   align-items: center; /* Centers text horizontally */
-  text-align: left;
-  height: 100vh; /* Full viewport height */
+  /* text-align: left; */
+  height: 90vh; /* Full viewport height */
+  align-content: center;
   /* background-color: #051d33; Dark background */
   /* color: #f0c9d1; Light text color */
 }
@@ -19,16 +20,20 @@
 .title-text {
   align-items: start;
   font-size: 6rem; /* Large title text */
-  margin-bottom: 20px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
 }
 
-.subtitle-text {
-  font-size: 1.25rem;
-  margin-left: 100px;
-  margin-right: 100px;
-  /* margin-top:-15px; */
+.subtitle-text1 {
+  font-size: 2.5rem;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitle-text2 {
+  font-size: 2.5rem;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .v-arrow {
@@ -38,7 +43,8 @@
   margin: 0 auto;
   position:absolute;
   bottom: 30px;
-  transform: rotate(-45deg); /* Start with one side of the "V" */
+  left: 50%;
+  transform: rotate(-45deg);
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }

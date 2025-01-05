@@ -24,10 +24,28 @@
 }
 
 .image-grid {
+  display: flex;
+  flex: 0 1; /* Allow it to share space proportionally */
+  max-width: 40%; /* Prevent it from exceeding a set width */
+  min-width: 30%;
+  max-height: 100%;
+  gap: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  align-content:first baseline;
+  margin-top: 10px;
+}
+
+.image-grid-horizontal {
   display: grid;
   flex: 1 1; /* Allow it to share space proportionally */
-  max-width: 40%; /* Prevent it from exceeding a set width */
+  max-width: 35%; /* Prevent it from exceeding a set width */
   max-height: 100%;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 0px;
   box-sizing: border-box;
@@ -42,6 +60,7 @@
   display: flex;
   flex-direction: column; /* Stack image and caption vertically */
   align-items: start; /* Center-align both image and caption */
+  width: 100%;
 }
 
 .title-image {
@@ -61,7 +80,7 @@
 .text-container {
   flex: 1; /* Share space proportionally */
   max-width: 100%; /* Constrain its size */
-  padding: 20px;
+  padding: 5px;
   padding-top: 10px;
   box-sizing: border-box;
   z-index: 1; /* Ensure it appears above the image grid */

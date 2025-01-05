@@ -73,7 +73,7 @@ const Projects = () => {
           </div> */}
           <div className="image-wrapper">
             <img src="images/psdl-3.png" alt="hi" className="image"/>
-            <figcaption class="caption">Mean motion sickness scores across 29 study participants</figcaption>
+            <figcaption class="caption">Mean motion sickness scores across 29 study participants.</figcaption>
           </div>
         </div>
         <div className="text-container">
@@ -94,7 +94,7 @@ const Projects = () => {
 
       <h2 className="header-content">Escape Challenge: Self-Navigating Robot</h2>
       <div className="content">
-        <div className="image-grid">
+        <div className="image-grid-horizontal">
           <div className="image-wrapper">
             <img src="images/slam-1.png" alt="hi" className="image"/>
             <figcaption class="caption">
@@ -171,7 +171,7 @@ const Projects = () => {
 
       <h2 className="header-content">Ball-Bot: Self-Balancing Robot</h2>
       <div className="content">
-        <div className="image-grid">
+        <div className="image-grid-horizontal">
           <div className="image-wrapper">
             <img src={logo_bb} alt="hi" className="image"/>
             <figcaption class="caption">The Ball-Bot we developed.</figcaption>
