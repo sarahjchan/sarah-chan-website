@@ -1,5 +1,5 @@
 .contact-container {
-    display:flexbox;
+    display: flexbox;
     flex-direction: column;
     width: 90%; /* Use the full screen width */
     /* max-width: 1200px; Limit the overall content width */
@@ -22,4 +22,13 @@
     align-items: start;
     align-content:first baseline;
     margin-top: 10px;
+  }
+
+  .text-container-carousel {
+    flex: 1; /* Share space proportionally */
+    max-width: 100%; /* Constrain its size */
+    padding: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above the image grid */
   }

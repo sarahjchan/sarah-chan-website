@@ -35,7 +35,12 @@ const Contact = () => {
                 !
             </p>
             <h1 className="header">OTHER FUN STUFF</h1>
-            <div className="content">
+            {/* <div className="content"> */}
+                <div className="text-container-carousel">
+                    <p>Outside of robotics, I compete for the University of Michigan Artistic 
+                    Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
+                    and attempt to recreate viral recipes.</p>
+                </div>
                 <div className="image-grid-carousel">
                     <div style={{ maxWidth: "180px", margin: "0", }}>
                     <Slider {...settings}>
@@ -47,12 +52,7 @@ const Contact = () => {
                     </Slider>
                     </div>
                 </div>
-                <div className="text-container">
-                <p>Outside of robotics, I compete for the University of Michigan Artistic 
-                Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
-                and attempt to recreate viral recipes.</p>
-                </div>
-            </div>
+            {/* </div> */}
         </div>
     );
 };
