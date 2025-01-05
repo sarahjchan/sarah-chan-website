@@ -15,30 +15,33 @@ function Footer() {
             .
           </small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link linkedin'
-              to='https://www.linkedin.com/in/sarahjchan/'
+            <a
+              className='social-icon-link linkedin'
+              href='https://www.linkedin.com/in/sarahjchan/'
               target='_blank'
               aria-label='LinkedIn'
+              rel='noopener noreferrer'
             >
-              <i class='fab fa-linkedin' />
-            </Link>
-            <Link
-              class='social-icon-link github'
-              to='https://github.com/sarahjchan'
+              <i className='fab fa-linkedin' />
+            </a>
+            <a
+              className='social-icon-link github'
+              href='https://github.com/sarahjchan'
               target='_blank'
               aria-label='github'
+              rel='noopener noreferrer'
             >
               <i class='fab fa-github' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link gmail'
-              to='mailto:sjchan@umich.edu'
+              href='mailto:sjchan@umich.edu'
               target='_blank'
               aria-label='gmail'
+              rel='noopener noreferrer'
             >
               <i class="far fa-envelope" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
