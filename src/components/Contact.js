@@ -35,14 +35,9 @@ const Contact = () => {
                 !
             </p>
             <h1 className="header">OTHER FUN STUFF</h1>
-            {/* <div className="content"> */}
-                <div className="text-container-carousel">
-                    <p>Outside of robotics, I compete for the University of Michigan Artistic 
-                    Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
-                    and attempt to recreate viral recipes.</p>
-                </div>
+            <div className="content">
                 <div className="image-grid-carousel">
-                    <div style={{ maxWidth: "180px", margin: "0", }}>
+                    {/* <div style={{ maxWidth: "180px", margin: "0" }}>
                     <Slider {...settings}>
                         {images.map((image, index) => (
                         <div key={index}>
@@ -50,9 +45,19 @@ const Contact = () => {
                         </div>
                         ))}
                     </Slider>
-                    </div>
+                    </div> */}
+                    <img src="images/end1.jpg" alt="hi" className="title-image"/>
+                    <img src="images/end2.jpg" alt="hi" className="image"/>
+                    {/* <img src="images/end3.jpeg" alt="hi" className="image"/> */}
+                    <img src="images/end5.jpg" alt="hi" className="image"/>
+                    <img src="images/end4.png" alt="hi" className="image"/>
                 </div>
-            {/* </div> */}
+                <div className="text-container-carousel">
+                    <p>Outside of robotics, I compete for the University of Michigan Artistic 
+                    Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
+                    and attempt to recreate viral recipes.</p>
+                </div>
+            </div>
         </div>
     );
 };
