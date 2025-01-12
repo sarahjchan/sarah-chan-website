@@ -49,8 +49,8 @@ const Projects = () => {
 
           <p>For this project, I integrated NVIDIA Isaac ROS SLAM packages with the vehicle so that it could drive on its own. Here's a breakdown of some of the tasks I performed:</p>
           <ul>
-          <li>Configured NVIDIA Isaac ROS SLAM package to work with CTL.</li>
-          <li>Created launch files in ROS 2 to run simulations in Gazebo.</li>
+          <li>Configured NVIDIA Isaac ROS SLAM and Navigation 2 packages to work with the CTL.</li>
+          <li>Created launch files in ROS 2 to run simulations in Gazebo and Foxglove Bridge.</li>
           <li>Wrote a URDF file (including TF trees) of the robot, including the physics behind every component of the robot so that the simulation could show how the robot would move realistically.</li>
           <li>Wrote all the launch files to test mapping, localization, and navigation in different combinations, both separately and together to ensure success in every possible scenario.</li>
           <li>Wrote all the launch files to run it on a stereo camera attached to a cart to visualize its mapping and localization in RViz and Foxglove Bridge when pushing the cart around the lab.</li>
