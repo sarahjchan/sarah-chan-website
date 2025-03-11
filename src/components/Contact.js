@@ -5,12 +5,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const images = [
-    "images/end1.jpg",
-    "images/end2.jpg",
-    // "images/end3.jpeg",
-    "images/end4.png",
-];
+// import end1 from './carousel-images/end1.jpg';
+// import end2 from './carousel-images/end2.jpg';
+// import end4 from './carousel-images/end4.png';
+
+// const images = [
+//     "/images/end1.jpg",
+//     "/images/end2.jpg",
+//     // "images/end3.jpeg",
+//     "/images/end4.png",
+//     // end1, end2, end4
+// ];
 
 const Contact = () => {
     const settings = {
@@ -30,13 +35,28 @@ const Contact = () => {
             <h1 className="header">CONTACT ME</h1>
             <p>Feel free to email me at {" "}
                 <a href="mailto:sjchan@umich.edu" target="_blank" rel="noopener noreferrer">sjchan@umich.edu</a> 
-                {" "} or connect with me on LinkedIn {" "}
-                <a href="https://www.linkedin.com/in/sarahjchan/" target="_blank" rel="noopener noreferrer">here</a> 
+                {" "} or connect with me on {" "}
+                <a href="https://www.linkedin.com/in/sarahjchan/" target="_blank" rel="noopener noreferrer">Linkedin</a> 
                 !
             </p>
             <h1 className="header">OTHER FUN STUFF</h1>
             <div className="content">
                 <div className="image-grid-carousel">
+                <div style={{ maxWidth: "200px", margin: "10" }} dir="ltr">
+                    <Slider {...settings}>
+                        <div>
+                            <img src="images/end1.jpg" alt="hi" className="title-image"/>
+                        </div>
+                        <div>
+                            <img src="images/end2.jpg" alt="hi" className="title-image"/>
+                        </div>
+                        <div>
+                            <img src="images/end4.png" alt="hi" className="title-image"/>
+                        </div>
+                    </Slider>
+                    </div>
+                </div>
+                {/* <div className="image-grid-carousel">
                     <div style={{ maxWidth: "200px", margin: "10" }}>
                     <Slider {...settings}>
                         {images.map((image, index) => (
@@ -45,12 +65,12 @@ const Contact = () => {
                         </div>
                         ))}
                     </Slider>
-                    </div>
+                    </div> */}
                     {/* <img src="images/end1.jpg" alt="hi" className="title-image"/>
                     <img src="images/end2.jpg" alt="hi" className="image"/>
                     <img src="images/end5.jpg" alt="hi" className="image"/>
                     <img src="images/end4.png" alt="hi" className="image"/> */}
-                </div>
+                {/* </div> */}
                 <div className="text-container-carousel">
                     <p>Outside of robotics, I compete for the University of Michigan Artistic 
                     Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
