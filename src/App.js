@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// eslint-disable-next-line import/no-unresolved
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
