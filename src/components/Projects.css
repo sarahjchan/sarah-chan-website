@@ -96,3 +96,12 @@ ul {
   margin-top: 5px;
   max-width: 100%;
 }
+
+.button-container {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  justify-content: space-evenly;
+}

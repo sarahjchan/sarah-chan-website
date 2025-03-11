@@ -4,6 +4,7 @@ import logo_bb from "./gifs/Ball-Bot2.gif";
 import logo_kf from "./gifs/kf.gif"
 import logo_kf2 from "./gifs/kf2.gif"
 import logo_pf from "./gifs/pf.gif"
+import { Button } from './Button';
 
 const Projects = () => {
   return (
@@ -61,11 +62,11 @@ const Projects = () => {
         </div>
       </div>
 
-      <h2 className="header-content">Motion Sickness Response to a Tilting Seat System  (Summer Research)</h2>
+      <h2 className="header-content">Motion Sickness Response to a Tilting Seat System  (Research)</h2>
       <div className="content">
         <div className="image-grid">
           <div className="image-wrapper">
-            <img src="images/psdl-1.png" alt="hi" className="image"/>
+            <img src="images/psdl-1.jpg" alt="hi" className="image"/>
             <figcaption class="caption">Representative data for tilting seat system tilt trajectory and lateral acceleration of the vehicle for a left turn.</figcaption>
           </div>
           {/* <div className="image-wrapper">
@@ -73,7 +74,7 @@ const Projects = () => {
             <figcaption class="caption">NEED CAP</figcaption>
           </div> */}
           <div className="image-wrapper">
-            <img src="images/psdl-3.png" alt="hi" className="image"/>
+            <img src="images/psdl-3.jpg" alt="hi" className="image"/>
             <figcaption class="caption">Mean motion sickness scores across 29 study participants.</figcaption>
           </div>
         </div>
@@ -90,6 +91,14 @@ const Projects = () => {
           <li>Used linear mixed models to run statistical analyses of motion sickness scores reported by subjects.</li>
           <li>Calculated the seat's position based on the angular position of the motors and plotted the filtered outcome against the predicted seat position.</li>
           </ul>
+          <div className="button-container">
+            <Button buttonStyle='btn--outline'>
+              Report
+            </Button>
+            {/* <Button buttonStyle='btn--outline'>
+              PDF
+            </Button> */}
+          </div>
         </div>
       </div>
 
