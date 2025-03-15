@@ -9,13 +9,13 @@ import "slick-carousel/slick/slick-theme.css";
 // import end2 from './carousel-images/end2.jpg';
 // import end4 from './carousel-images/end4.png';
 
-// const images = [
-//     "/images/end1.jpg",
-//     "/images/end2.jpg",
-//     // "images/end3.jpeg",
-//     "/images/end4.png",
-//     // end1, end2, end4
-// ];
+const images = [
+    "/images/end1.jpg",
+    "/images/end2.jpg",
+    // "images/end3.jpeg",
+    "/images/end4.png",
+    // end1, end2, end4
+];
 
 const Contact = () => {
     const settings = {
@@ -41,7 +41,7 @@ const Contact = () => {
             </p>
             <h1 className="header">OTHER FUN STUFF</h1>
             <div className="content">
-                <div className="image-grid-carousel">
+                {/* <div className="image-grid-carousel">
                 <div style={{ maxWidth: "200px", margin: "10" }} dir="ltr">
                     <Slider {...settings}>
                         <div>
@@ -55,8 +55,8 @@ const Contact = () => {
                         </div>
                     </Slider>
                     </div>
-                </div>
-                {/* <div className="image-grid-carousel">
+                </div> */}
+                <div className="image-grid-carousel">
                     <div style={{ maxWidth: "200px", margin: "10" }}>
                     <Slider {...settings}>
                         {images.map((image, index) => (
@@ -65,12 +65,12 @@ const Contact = () => {
                         </div>
                         ))}
                     </Slider>
-                    </div> */}
+                    </div>
                     {/* <img src="images/end1.jpg" alt="hi" className="title-image"/>
                     <img src="images/end2.jpg" alt="hi" className="image"/>
                     <img src="images/end5.jpg" alt="hi" className="image"/>
                     <img src="images/end4.png" alt="hi" className="image"/> */}
-                {/* </div> */}
+                </div>
                 <div className="text-container-carousel">
                     <p>Outside of robotics, I compete for the University of Michigan Artistic 
                     Swimming Club, rock climb, hike and bike the beautiful trails around Ann Arbor, 
@@ -80,16 +80,5 @@ const Contact = () => {
         </div>
     );
 };
-
-// const Contact = () => {
-//   return (
-//     <div className="contact-container">
-//         <h1 className="header">MORE FUN STUFF</h1>
-//         <div className="text-container">hello</div>
-//     </div>
-//     // Feel free to email me at sjchan@umich.edu or connect with me on LinkedIn here!
-//     // <h1 classname="header">MORE FUN STUFF</h1>
-//   );
-// };
 
 export default Contact;

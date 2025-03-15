@@ -1,5 +1,5 @@
 .contact-container {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     width: 60%; /* Use the full screen width */
     /* max-width: 1200px; Limit the overall content width */
@@ -12,6 +12,7 @@
     display: flex;
     flex: 0 1; /* Allow it to share space proportionally */
     flex-wrap: wrap;
+    min-width: 200px;
     max-width: 40%; /* Prevent it from exceeding a set width */
     max-height: 500px;
     gap: 10px;
@@ -34,3 +35,16 @@
     z-index: 1; /* Ensure it appears above the image grid */
     /* margin-left: 200px; */
   }
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slick-slide img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}

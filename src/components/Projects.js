@@ -179,6 +179,53 @@ const Projects = () => {
         </div>
       </div>
 
+      <h2 className="header-content">Sparse 3D Reconstruction</h2>
+      <div className="content">
+        <div className="image-grid">
+        <img src="images/epipolar_lines.png" alt="hi" className="image"/>
+            <figcaption class="caption">
+              Visualization of epipolar lines.
+            </figcaption>
+        <img src="images/epipolar_correspondances.png" alt="hi" className="image"/>
+            <figcaption class="caption">
+              Visualization of epipolar correspondences.
+            </figcaption>
+        <img src="images/reconstruction.png" alt="hi" className="image"/>
+            <figcaption class="caption">
+              Final reconstruction of the temple.
+            </figcaption>
+        </div>
+        <div className="text-container">
+            <p>In this project, I used two images of a temple from different viewpoints 
+              to reconstruct key features of the temple in 3D coordinates.<br></br><br></br>
+
+            First, I calculated the fundamental matrix which is a 3x3 matrix that describes how 
+            points in two images of the same scene are related. In order to obtain
+            the fundamental matrix, I implemented the 8-point algorithm. 
+            Based on the visualization of the epipolar lines, the lines in the second image appeared to pass directly over the corresponding 
+            points, suggesting that the computed fundamental matrix
+            correctly models the geometric relationship between the two images.<br></br><br></br>
+
+            Next, I found corresponding points between the two images. For each point, 
+            I identified the best match along the epipolar line by evaluating the 
+            sum of squared differences between 7×7 pixel patches centered 
+            around the candidate points along the epipolar line in one image and the reference point in the other image. 
+            The point with the smallest SSD value was selected as the corresponding 2D image 
+            point.<br></br><br></br>
+
+            Then, I calculated the essential matrix using the camera intrinsics and the fundamental matrix. 
+            The essential matrix is necessary to determine the relative position 
+            and orientation between the cameras and the 3D position of the 
+            corresponding image points. It can be broken down into the rotation 
+            and translation components which are used to find the camera matrix.<br></br><br></br>
+
+            Lastly, I performed triangulation. I used Singular Value Decomposition (SVD) to estimate the 3D position of 
+            each correspondence. My final reconstruction is shown in the image to the left.
+
+            </p>
+        </div>
+      </div>
+
       <h2 className="header-content">Ball-Bot: Self-Balancing Robot</h2>
       <div className="content">
         <div className="image-grid-horizontal">
