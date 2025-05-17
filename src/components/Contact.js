@@ -10,22 +10,23 @@ import "slick-carousel/slick/slick-theme.css";
 // import end4 from './carousel-images/end4.png';
 
 const images = [
+    "/images/end6.jpg",
     "/images/end1.jpg",
-    "/images/end2.jpg",
-    // "images/end3.jpeg",
+    "/images/end7.jpg",
     "/images/end4.png",
-    // end1, end2, end4
+    "/images/end9.jpg",
+    "/images/end10.jpg",
 ];
 
 const Contact = () => {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 5000,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 2000,
     };
 
     return (
@@ -41,23 +42,9 @@ const Contact = () => {
             </p>
             <h1 className="header">OTHER FUN STUFF</h1>
             <div className="content">
-                {/* <div className="image-grid-carousel">
-                <div style={{ maxWidth: "200px", margin: "10" }} dir="ltr">
-                    <Slider {...settings}>
-                        <div>
-                            <img src="images/end1.jpg" alt="hi" className="title-image"/>
-                        </div>
-                        <div>
-                            <img src="images/end2.jpg" alt="hi" className="title-image"/>
-                        </div>
-                        <div>
-                            <img src="images/end4.png" alt="hi" className="title-image"/>
-                        </div>
-                    </Slider>
-                    </div>
-                </div> */}
                 <div className="image-grid-carousel">
-                    <div style={{ maxWidth: "200px", margin: "10" }}>
+                    {/* <div style={{ maxWidth: "200px", margin: "10" }}> */}
+                    <div style={{width: "100%", maxWidth: "400px", margin: "10px auto"}}>
                     <Slider {...settings}>
                         {images.map((image, index) => (
                         <div key={index}>
