@@ -10,9 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 // import end4 from './carousel-images/end4.png';
 
 const images = [
-    "/images/end6.jpg",
+    "/images/end6.JPG",
     "/images/end1.jpg",
-    "/images/end7.jpg",
+    "/images/end7.JPG",
     "/images/end4.png",
     "/images/end9.jpg",
     "/images/end10.jpg",
